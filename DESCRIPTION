@@ -22,19 +22,19 @@ RoxygenNote: 6.1.1
 Imports:
     ape,
     assertive,
+    hunspell,
     phangorn,
     rappdirs,
     rJava,
+    rmarkdown,
+    spelling,
     stringr,
+    testthat (>= 2.1.0),
     xml2
 Suggests:
     beautier (>= 2.2.2),
-    hunspell,
     knitr,
-    rmarkdown,
-    spelling,
     testit,
-    testthat (>= 2.1.0),
     tracerer
 URL: https://docs.ropensci.org/beastier (website)
     https://github.com/ropensci/beastier
