@@ -30,6 +30,7 @@ build_script:
 test_script:
   - travis-tool.sh run_tests
   - Rscript -e "beastier::install_beast2()"
+  - Rscript scripts/beastier_self_test.R
 
 on_failure:
   - 7z a failure.zip *.Rcheck\*
