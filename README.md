@@ -1,6 +1,6 @@
 # beastier_on_windows
 
-![](Beauty_and_Beast.jpg)
+![](pics/Beauty_and_Beast.jpg)
 
 Verify the beastier R package runs on Windows
 

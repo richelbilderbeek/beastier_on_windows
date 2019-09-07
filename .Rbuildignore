@@ -1,0 +1,16 @@
+^codemeta\.json$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.travis.yml$
+^.lintr$
+^install_beast2$
+^install_beast2\.md$
+^pics$
+^doc$
+^scripts$
+^code_of_conduct\.md$
+^Faq\.md$
+^CONTRIBUTING\.md$
+^check_dead_links$
+^appveyor\.yml$
+^\.appveyor\.yml$
