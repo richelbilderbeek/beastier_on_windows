@@ -25,10 +25,11 @@ build_script:
   - travis-tool.sh install_github ropensci/beautier
   - travis-tool.sh install_github ropensci/tracerer
   - travis-tool.sh install_github ropensci/beastier
+  - travis-tool.sh install_github r-lib/testthat
   - # travis-tool.sh install_deps
 
 test_script:
-  - travis-tool.sh run_tests
+  - # travis-tool.sh run_tests
   - Rscript -e "beastier::install_beast2()"
   - Rscript scripts/beastier_self_test.R
 
