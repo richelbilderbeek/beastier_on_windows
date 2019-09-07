@@ -23,5 +23,4 @@ URL: https://docs.ropensci.org/beastier (website)
     https://github.com/ropensci/beastier
 BugReports: https://github.com/ropensci/beastier
 Language: en-US
-VignetteBuilder: knitr
 SystemRequirements: BEAST2 (http://www.beast2.org/)
