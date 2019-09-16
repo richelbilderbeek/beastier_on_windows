@@ -32,15 +32,18 @@ library(testthat)
 
 testit::assert(is_beast2_installed())
 
-# Do a BEAST2 run
+print("Create the BEAST2 options")
+
 beast2_options <- create_beast2_options(
-  input_filename = get_beastier_path("2_4.xml")
+  input_filename = get_beastier_path("2_4.xml"),
+  verbose = TRUE
 )
 
 expect_false(file.exists(beast2_options$output_log_filename))
 expect_false(file.exists(beast2_options$output_trees_filenames))
 expect_false(file.exists(beast2_options$output_state_filename))
 
+print("Do a BEAST2 run")
 output <- run_beast2_from_options(beast2_options)
 
 expect_true(length(output) > 40)
