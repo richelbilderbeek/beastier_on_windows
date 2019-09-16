@@ -1,38 +1,40 @@
 # beastier self-testing script
 
-print("=====================")
-print("Self-testing beastier")
-print("=====================")
+cat("=====================")
+cat("Self-testing beastier")
+cat("=====================")
 
 library(beastier)
 
-print("------------")
-print("Session info")
-print("------------")
+cat("------------")
+cat("Session info")
+cat("------------")
 
-print(sessionInfo())
+cat(sessionInfo())
 
-print("--------------------------")
-print("beastier's package version")
-print("--------------------------")
+cat("--------------------------")
+cat("beastier's package version")
+cat("--------------------------")
 
-print(packageVersion("beastier"))
+cat(packageVersion("beastier"))
 
-print("--------------------------")
-print("Show functions in package ")
-print("--------------------------")
+cat("--------------------------")
+cat("BEAST2 version")
+cat("--------------------------")
 
-print(lsf.str("package:beastier"))
+cat(beastier::get_beast2_version())
 
-print("---------------")
-print("Start self-test")
-print("---------------")
+cat("---------------")
+cat("Start self-test")
+cat("---------------")
 
 library(testthat)
 
 testit::assert(is_beast2_installed())
 
-print("Create the BEAST2 options")
+cat("-------------------------")
+cat("Create the BEAST2 options")
+cat("-------------------------")
 
 beast2_options <- create_beast2_options(
   input_filename = get_beastier_path("2_4.xml"),
@@ -43,7 +45,9 @@ expect_false(file.exists(beast2_options$output_log_filename))
 expect_false(file.exists(beast2_options$output_trees_filenames))
 expect_false(file.exists(beast2_options$output_state_filename))
 
-print("Do a BEAST2 run")
+cat("---------------")
+cat("Do a BEAST2 run")
+cat("---------------")
 output <- run_beast2_from_options(beast2_options)
 
 expect_true(length(output) > 40)
@@ -51,6 +55,6 @@ expect_true(file.exists(beast2_options$output_log_filename))
 expect_true(file.exists(beast2_options$output_trees_filenames))
 expect_true(file.exists(beast2_options$output_state_filename))
 
-print("============================")
-print("Self-test of beastier passed")
-print("============================")
+cat("============================")
+cat("Self-test of beastier passed")
+cat("============================")
