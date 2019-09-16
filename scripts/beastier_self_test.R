@@ -6,22 +6,11 @@ cat("=====================")
 
 library(beastier)
 
-cat("------------")
 cat("Session info")
-cat("------------")
-
-cat(sessionInfo())
-
-cat("--------------------------")
-cat("beastier's package version")
-cat("--------------------------")
+print(sessionInfo())
 
 cat("beastier version:")
 print(packageVersion("beastier"))
-
-cat("--------------------------")
-cat("BEAST2 version")
-cat("--------------------------")
 
 cat(paste("Is BEAST2 installed:", beastier::is_beast2_installed()))
 cat(paste("BEAST2 version:", beastier::get_beast2_version()))
