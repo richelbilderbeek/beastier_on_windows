@@ -9,6 +9,13 @@ Branch   |Status
 
 Verify the beastier R package runs on Windows
 
+## Dependencies
+
+Package              | Status
+---------------------|-----------------
+`beautier_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/blvjo5pulbkqxrhb/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/beautier-on-windows/branch/master)
+`tracerer_on_windows`|[![Build status](https://ci.appveyor.com/api/projects/status/jyhck66d6yrbr12h/branch/master?svg=true)](https://ci.appveyor.com/project/richelbilderbeek/tracerer-on-windows/branch/master)
+
 ## Logo
 
 From [here](https://www.flickr.com/photos/nieve44/ [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)]).
