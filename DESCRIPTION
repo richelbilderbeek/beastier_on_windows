@@ -22,4 +22,4 @@ URL: https://docs.ropensci.org/beastier (website)
     https://github.com/ropensci/beastier
 BugReports: https://github.com/ropensci/beastier
 Language: en-US
-SystemRequirements: BEAST2 (http://www.beast2.org/)
+SystemRequirements: BEAST2 (https://www.beast2.org/)
