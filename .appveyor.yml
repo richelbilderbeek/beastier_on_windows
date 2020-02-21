@@ -22,12 +22,8 @@ environment:
     USE_RTOOLS: true
 
 build_script:
-  - travis-tool.sh install_github ropensci/beautier
-  - travis-tool.sh install_github ropensci/tracerer
-  - echo "$APPVEYOR_REPO_BRANCH"
-  - travis-tool.sh install_github ropensci/beastier@develop
-  - travis-tool.sh install_github r-lib/testthat
-  - # travis-tool.sh install_deps
+  - travis-tool.sh install_deps
+  - travis-tool.sh install_github ropensci/beastier
 
 test_script:
   - # travis-tool.sh run_tests
