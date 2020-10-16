@@ -19,8 +19,8 @@ RoxygenNote: 6.1.1
 Imports: 
   testthat
 Suggests:
-URL: https://docs.ropensci.org/beastier (website)
-    https://github.com/ropensci/beastier
-BugReports: https://github.com/ropensci/beastier
+URL: https://docs.ropensci.org/beastier/ (website)
+    https://github.com/ropensci/beastier/
+BugReports: https://github.com/ropensci/beastier/issues
 Language: en-US
 SystemRequirements: BEAST2 (http://www.beast2.org/)
