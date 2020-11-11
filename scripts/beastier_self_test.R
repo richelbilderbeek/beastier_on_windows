@@ -8,10 +8,10 @@ library(beautier)
 library(beastier)
 
 cat("Session info")
-print(sessionInfo())
+message(sessionInfo())
 
 cat("beastier version:")
-print(packageVersion("beastier"))
+message(packageVersion("beastier"))
 
 cat(paste("Is BEAST2 installed:", beastier::is_beast2_installed()))
 cat(paste("BEAST2 version:", beastier::get_beast2_version()))
