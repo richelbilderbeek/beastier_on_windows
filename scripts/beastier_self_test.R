@@ -8,7 +8,7 @@ library(beautier)
 library(beastier)
 
 cat("Session info")
-message(sessionInfo())
+message(paste0(devtools::session_info(), collapse = "\n"))
 
 cat("beastier version:")
 message(packageVersion("beastier"))
