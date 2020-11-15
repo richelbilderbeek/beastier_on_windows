@@ -23,19 +23,14 @@ environment:
 
 build_script:
   - travis-tool.sh install_deps
-  - travis-tool.sh install_github ropensci/beautier
-<<<<<<< HEAD
-  - travis-tool.sh install_github ropensci/tracerer
-  - travis-tool.sh install_github ropensci/beastier
-  - travis-tool.sh install_github r-lib/testthat
-  - # travis-tool.sh install_deps
-=======
-  - travis-tool.sh install_github ropensci/beastier
->>>>>>> develop
 
 test_script:
-  - # travis-tool.sh run_tests
+  # Test without BEAST2
+  - travis-tool.sh run_tests
+  - Rscript scripts/beastier_self_test.R
+  # Test with BEAST2
   - Rscript -e "beastier::install_beast2()"
+  - travis-tool.sh run_tests
   - Rscript scripts/beastier_self_test.R
 
 on_failure:
