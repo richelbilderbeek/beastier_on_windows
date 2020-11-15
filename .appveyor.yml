@@ -18,7 +18,6 @@ cache:
 # Inspired on https://github.com/juliasilge/tidytext
 environment:
   global:
-    WARNINGS_ARE_ERRORS: 0
     USE_RTOOLS: true
 
 build_script:
