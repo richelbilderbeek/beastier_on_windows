@@ -1,0 +1,5 @@
+remotes::install_github("richelbilderbeek/beastierinstall")
+remotes::install_github("ropensci/beastier")
+beastierinstall::install_beast2()
+beastier::do_minimal_run()
+beastier::beastier_report()
